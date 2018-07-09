@@ -1,0 +1,270 @@
+model: mlp
+hidden: 400, 200, 100
+dropout: no
+learning_rate: .001
+epochs: 10
+classes: 10 animals
+train acc: .782
+test_acc: .751
+
+model: mlp
+hidden: 400, 200, 100
+dropout: .5
+learning_rate: .001
+epochs: 10
+classes: 10 animals
+train acc: .638
+test_acc: .632
+
+model: mlp
+hidden: 1024, 512, 256
+dropout: .2
+learning_rate: .001
+epochs: 10
+classes: 10 animals
+train acc: .750
+test_acc: .731
+
+model: mlp
+hidden: 1024, 512, 256
+dropout: .2
+learning_rate: .001
+epochs: 10
+classes: 10 animals
+normalized: yes
+train acc: .802
+test_acc: .771
+
+model: resnet
+learning_rate: .001
+epochs: 1
+classes: 10 animals
+normalized: yes
+train acc: .814
+test_acc: .809
+
+model: cnn [8, 16, -1, 32, 32, -1]
+learning_rate: .001
+epochs: 5
+classes: 10 animals
+normalized: yes
+train acc: .845
+test_acc: .832
+
+model: cnn_embed [8, 16, -1, 32, 32, -1]
+learning_rate: .001
+epochs: 5
+classes: 10 animals
+normalized: yes
+train acc: .821
+test_acc: .810
+
+model: cnn [8, 16, -1, 32, 32, -1]
+learning_rate: .001
+epochs: 5
+classes: 10 different
+normalized: yes
+train acc: .971
+test_acc: .965
+
+model: cnn [32, -1, 64, -1, 128, -1]
+mlp: [128]
+learning_rate: .001
+epochs: 5
+classes: 10 different
+normalized: yes
+train acc: .977
+test_acc: .969
+
+model: cnn_embed [32, -1, 64, -1, 128, -1]
+mlp: [128]
+learning_rate: .001
+epochs: 1
+classes: 10 different
+normalized: yes
+train acc: .965
+test_acc: .963
+
+model: cnn_embed [32, -1, 64, -1, 128, -1]
+mlp: [128]
+learning_rate: .001
+epochs: 5
+classes: 10 different
+normalized: yes
+train acc: .974
+test_acc: .968
+
+model: cnn [32, -1, 64, -1, 128, -1]
+mlp: [128]
+learning_rate: .001
+epochs: 5
+classes: 20 different
+normalized: yes
+train acc: .938
+test_acc: .930
+
+model: cnn_embed [32, -1, 64, -1, 128, -1]
+mlp: [128]
+learning_rate: .001
+epochs: 5
+classes: 20 different
+normalized: yes
+train acc: .928
+test_acc: .923
+
+model: cnn [32, -1, 64, -1, 128, -1]
+mlp: [128]
+learning_rate: .001
+epochs: 5
+classes: 30 different
+normalized: yes
+train acc: .922
+test_acc: .915
+
+task: transfer learning
+model: cnn_embed [32, -1, 64, -1, 128, -1]
+mlp: [128]
+learning_rate: .001
+epochs: 5
+classes 1: "butterfly", "cat", "horse", "whale", "duck", "apple", "pear",
+           "strawberry", "bed", "table"
+classes 2: "bird", "dog", "fish", "zebra", "monkey", "banana", "grapes",
+           "blueberry", "couch", "bench"
+normalized: yes
+class 2 train_frac: .1
+classes 1 train_acc: .951
+classes 1 test_acc:  .943
+classes 2 train_acc: .936
+classes 2 test_acc:  .903
+
+task: transfer learning
+model: cnn [32, -1, 64, -1, 128, -1]
+mlp: [128]
+learning_rate: .001
+epochs: 5
+classes 1: "butterfly", "cat", "horse", "whale", "duck", "apple", "pear",
+           "strawberry", "bed", "table"
+classes 2: "bird", "dog", "fish", "zebra", "monkey", "banana", "grapes",
+           "blueberry", "couch", "bench"
+normalized: yes
+class 2 train_frac: .1
+classes 1 train_acc: .961
+classes 1 test_acc:  .949
+classes 2 train_acc: .962
+classes 2 test_acc:  .907
+
+task: transfer learning
+model: cnn_embed [32, -1, 64, -1, 128, -1]
+mlp: [128]
+learning_rate: .001
+epochs: 5
+classes 1: "butterfly", "cat", "horse", "whale", "duck", "apple", "pear",
+           "strawberry", "bed", "table"
+classes 2: "bird", "dog", "fish", "zebra", "monkey", "banana", "grapes",
+           "blueberry", "couch", "bench"
+normalized: yes
+class 2 train_frac: .01
+classes 1 train_acc: .953
+classes 1 test_acc:  .946
+classes 2 train_acc: .916
+classes 2 test_acc:  .864
+
+task: transfer learning
+model: cnn [32, -1, 64, -1, 128, -1]
+mlp: [128]
+learning_rate: .001
+epochs: 5
+classes 1: "butterfly", "cat", "horse", "whale", "duck", "apple", "pear",
+           "strawberry", "bed", "table"
+classes 2: "bird", "dog", "fish", "zebra", "monkey", "banana", "grapes",
+           "blueberry", "couch", "bench"
+normalized: yes
+class 2 train_frac: .01
+classes 1 train_acc: .961
+classes 1 test_acc:  .949
+classes 2 train_acc: .959
+classes 2 test_acc:  .872
+
+task: transfer learning
+model: cnn_embed [32, -1, 64, -1, 128, -1]
+mlp: [128]
+learning_rate: .001
+epochs: 5
+classes 1: "butterfly", "cat", "horse", "whale", "duck", "apple", "pear",
+           "strawberry", "bed", "table"
+classes 2: "bird", "dog", "fish", "zebra", "monkey", "banana", "grapes",
+           "blueberry", "couch", "bench"
+normalized: yes
+class 2 train_frac: .001
+classes 1 train_acc: .952
+classes 1 test_acc:  .944
+classes 2 train_acc: .621
+classes 2 test_acc:  .578
+
+task: transfer learning
+model: cnn [32, -1, 64, -1, 128, -1]
+mlp: [128]
+learning_rate: .001
+epochs: 5
+classes 1: "butterfly", "cat", "horse", "whale", "duck", "apple", "pear",
+           "strawberry", "bed", "table"
+classes 2: "bird", "dog", "fish", "zebra", "monkey", "banana", "grapes",
+           "blueberry", "couch", "bench"
+normalized: yes
+class 2 train_frac: .001
+classes 1 train_acc: .961
+classes 1 test_acc:  .949
+classes 2 train_acc: .840
+classes 2 test_acc:  .738
+
+task: transfer learning
+model: cnn_embed [32, -1, 64, -1, 128, -1]
+mlp: [128]
+learning_rate: .01
+epochs: 5
+classes: 15, 15
+normalized: yes
+class 2 train_frac: .01
+classes 1 train_acc: .948
+classes 1 test_acc:  .942
+classes 2 train_acc: .897
+classes 2 test_acc:  .844
+
+task: transfer learning
+model: cnn [32, -1, 64, -1, 128, -1]
+mlp: [128]
+learning_rate: .01
+epochs: 5
+classes: 15, 15
+normalized: yes
+class 2 train_frac: .01
+classes 1 train_acc: .960
+classes 1 test_acc:  .950
+classes 2 train_acc: .946
+classes 2 test_acc:  .862
+
+task: transfer learning
+model: cnn_embed [32, -1, 64, -1, 128, -1]
+mlp: [128]
+learning_rate: .01
+epochs: 5
+classes: 15, 15
+normalized: yes
+class 2 train_frac: .01
+top3 classes 1 train_acc: .979
+top3 classes 1 test_acc:  .976
+top3 classes 2 train_acc: .966
+top3 classes 2 test_acc:  .940
+
+task: transfer learning
+model: cnn [32, -1, 64, -1, 128, -1]
+mlp: [128]
+learning_rate: .01
+epochs: 5
+classes: 15, 15
+normalized: yes
+class 2 train_frac: .01
+top3 classes 1 train_acc: .989
+top3 classes 1 test_acc:  .984
+top3 classes 2 train_acc: .986
+top3 classes 2 test_acc:  .959

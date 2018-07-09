@@ -1,0 +1,51 @@
+Number of classes: 10
+
+Similar classes:
+Test loss: 0.38232635284017175
+Test accuracy: 0.873008119952931
+
+Different classes:
+Test loss: 0.21703208860938547
+Test accuracy: 0.9656102946096032
+
+
+Number of classes: 8
+
+Similar classes:
+Test loss: 0.4267095388619291 
+Test accuracy: 0.8928570008210952
+
+Different classes:
+Test loss: 0.21118382092068025
+Test accuracy: 0.9669338207724034
+
+Number of classes: 6 (10 Round Average)
+
+Similar classes:
+Average Test loss: 0.3027572720060445
+Average Test accuracy: 0.916557967916981
+
+Different classes:
+Average Test loss: 0.1293743981173369
+Average Test accuracy: 0.972223491034929
+
+Number of classes: 4 (10 Round Average)
+
+Similar classes:
+Average Test loss: 0.23376502876343896
+Average Test accuracy: 0.9447253970790193
+
+Different classes:
+Average Test loss: 0.1358466599340556
+Average Test accuracy: 0.9769493104893179
+
+Number of classes: 2 (15 Round Average)
+
+Similar classes:
+Average Test loss: 0.15695058074093066
+Average Test accuracy: 0.9677773576761471
+
+Different classes:
+Average Test loss: 0.06680716977331344
+Average Test accuracy: 0.9855214223659075
+

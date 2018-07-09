@@ -1,0 +1,17 @@
+CNN
+
+Similar classes:
+Test loss: 0.4633625543305276
+Test accuracy: 0.8679958433166348
+
+Test loss: 0.13996616562194816
+Test accuracy: 0.9680783841447549
+
+FFNN
+
+Similar classes:
+Test loss: 0.6256971310943138
+Test accuracy: 0.8089762039782252
+
+Test loss: 0.49725491054716614
+Test accuracy: 0.9433863377863021
